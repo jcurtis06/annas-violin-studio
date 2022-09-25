@@ -1,26 +1,72 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Bodoni;
+  src: url("../public/BodoniFLF-Bold.ttf");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: Sketch;
+  src: url("../public/Goldoni_DEMO.otf");
 }
 
-* {
-  box-sizing: border-box;
+.text-shadow {
+  text-shadow: 0 0 50px rgb(97, 96, 96);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.link {
+  display: inline-block;
+  position: relative;
+}
+
+.link:hover {
+  animation: link-expand 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.link:not(:hover) {
+  animation: link-unexpand 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-expand {
+  from {
+    letter-spacing: 0;
   }
-  body {
-    color: white;
-    background: black;
+  to {
+    letter-spacing: 0.1em;
   }
+}
+
+@keyframes link-unexpand {
+  from {
+    letter-spacing: 0.1em;
+  }
+  to {
+    letter-spacing: 0;
+  }
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.salmon-color {
+  color: #f16461;
 }

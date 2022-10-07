@@ -26,13 +26,13 @@ export default function Events() {
             Is Your Big Day Approaching?
           </p>
           <p className="font-serif pt-5">
-            Hello, I’m John Doe and I teach violin lessons in 123 and 123, 123.
-            I have played violin for 11 years, participating in youth orchestras
-            and quartets, and teaching violin at Seattle Music Partners, a
-            program that provides free music lessons for low-income families. I
-            also play for my church, weddings, and other events. I have
-            completed Suzuki Teaching Certification and I primarily teach using
-            the Suzuki Method.
+            Hello, I&apos;m John Doe and I teach violin lessons in 123 and 123,
+            123. I have played violin for 11 years, participating in youth
+            orchestras and quartets, and teaching violin at Seattle Music
+            Partners, a program that provides free music lessons for low-income
+            families. I also play for my church, weddings, and other events. I
+            have completed Suzuki Teaching Certification and I primarily teach
+            using the Suzuki Method.
           </p>
         </div>
         <div className="border-black grid md:grid-cols-2 font-serif">

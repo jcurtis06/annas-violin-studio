@@ -42,7 +42,7 @@ export default function Media({ data }) {
             const { title, thumbnails = {}, resourceId = {} } = snippet;
             const { medium } = thumbnails;
             return (
-              <div>
+              <div key={id}>
                 <iframe
                   src={`https://www.youtube.com/embed/${resourceId.videoId}`}
                   frameBorder="1"

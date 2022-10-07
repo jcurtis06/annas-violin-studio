@@ -14,7 +14,7 @@ export default function Navbar() {
       <nav className="w-full shadow-md flex flex-col">
         <div className="md:text-center md:ml-0 md:block ml-5 flex">
           <h1 className="md:text-6xl text-xl pt-10 text-shadow salmon-color font-serif">
-            Anna's Violin Studio
+            Anna&apos;s Violin Studio
           </h1>
           <div className="md:hidden ml-auto p-5">
             <button onClick={handleClick}>

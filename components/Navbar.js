@@ -1,27 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useWindowDimensions from "./getWindowDimensions";
 
 export default function Navbar() {
+  const { height, width } = useWindowDimensions();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (width > 768) {
+      setOpen(true);
+    }
+  }, []);
+
   function handleClick() {
-    setOpen(!open);
+    if (width < 768) {
+      setOpen(!open);
+    }
+    //setOpen(!open);
   }
 
   return (
     <>
       <nav className="w-full shadow-md flex flex-col">
         <div className="md:text-center md:ml-0 md:block ml-5 flex">
-          <h1 className="md:text-6xl text-xl pt-10 text-shadow salmon-color font-serif">
+          <h1 className="md:text-6xl text-2xl md:pt-10 pt-7 text-shadow salmon-color font-serif">
             Anna&apos;s Violin Studio
           </h1>
           <div className="md:hidden ml-auto p-5">
             <button onClick={handleClick}>
-              <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="20" rx="8"></rect>
-                <rect y="30" width="100" height="20" rx="8"></rect>
-                <rect y="60" width="100" height="20" rx="8"></rect>
+              <svg viewBox="0 0 100 80" width="30" height="40">
+                <rect width="100" height="10" rx="8"></rect>
+                <rect y="30" width="100" height="10" rx="8"></rect>
+                <rect y="60" width="100" height="10" rx="8"></rect>
               </svg>
             </button>
           </div>
@@ -29,13 +40,13 @@ export default function Navbar() {
         <div
           className={
             open
-              ? "hidden md:flex-row flex-col justify-center"
-              : "flex md:flex-row flex-col justify-center"
+              ? "flex md:flex-row flex-col justify-center"
+              : "hidden md:flex-row flex-col justify-center"
           }
         >
           <div className="p-5">
             <Link href="/">
-              <a>
+              <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
                   About
                 </p>
@@ -44,7 +55,7 @@ export default function Navbar() {
           </div>
           <div className="p-5">
             <Link href="/events">
-              <a>
+              <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
                   Weddings
                 </p>
@@ -53,7 +64,7 @@ export default function Navbar() {
           </div>
           <div className="p-5">
             <Link href="/Media">
-              <a>
+              <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
                   Listen
                 </p>
@@ -62,7 +73,7 @@ export default function Navbar() {
           </div>
           <div className="p-5">
             <Link href="/booking">
-              <a>
+              <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
                   Lessons
                 </p>
@@ -71,7 +82,7 @@ export default function Navbar() {
           </div>
           <div className="p-5">
             <Link href="/contact">
-              <a>
+              <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
                   Contact
                 </p>

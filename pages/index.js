@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="font-sketch text-6xl text-white">About Me</h1>
         </div>
       </div>
-      <div className="px-52 py-10">
+      <div className="md:px-52 px-4 py-10">
         <p className="text-2xl font-sketch salmon-color">Who I Am</p>
         <p className="font-serif pt-5">
           Hello, I’m John Doe and I teach violin lessons in 123 and 123, 123. I

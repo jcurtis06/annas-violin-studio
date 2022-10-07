@@ -4,7 +4,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <Component {...pageProps} />
       </div>
     </Layout>

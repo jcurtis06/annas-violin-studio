@@ -1,4 +1,5 @@
 import Image from "next/image";
+import getWindowDimensions from "../components/getWindowDimensions";
 
 const YOUTUBE_API_KEY = "AIzaSyBv30YmAyi1PlelHzu4Ocf57ATUt5DwnLE";
 
@@ -18,14 +19,6 @@ export async function getServerSideProps() {
 }
 
 export default function Media({ data }) {
-  console.log("data:", data);
-  const opts = {
-    height: "390",
-    width: "640",
-    playerVars: {
-      autoplay: 0,
-    },
-  };
   return (
     <>
       <div className="relative w-screen h-64 shadow-md">
@@ -44,7 +37,7 @@ export default function Media({ data }) {
         </div>
       </div>
       <div className="w-full flex overflow-x-hidden justify-center">
-        <div className="grid grid-cols-3">
+        <div className="md:grid md:grid-cols-3">
           {data.items.map(({ id, snippet = {} }) => {
             const { title, thumbnails = {}, resourceId = {} } = snippet;
             const { medium } = thumbnails;
@@ -52,9 +45,9 @@ export default function Media({ data }) {
               <div>
                 <iframe
                   src={`https://www.youtube.com/embed/${resourceId.videoId}`}
-                  frameBorder="0"
+                  frameBorder="1"
                   allowFullScreen
-                  title="Embedded YouTube Video"
+                  title="YouTube Video"
                 />
               </div>
             );

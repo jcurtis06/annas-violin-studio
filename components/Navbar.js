@@ -11,27 +11,42 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full shadow-md">
-        <div className="text-center">
-          <h1 className="text-6xl pt-10 text-shadow salmon-color font-sketch">
-            Annas Violin Studio
+      <nav className="w-full shadow-md flex flex-col">
+        <div className="md:text-center md:ml-0 md:block ml-5 flex">
+          <h1 className="md:text-6xl text-xl pt-10 text-shadow salmon-color font-serif">
+            Anna's Violin Studio
           </h1>
+          <div className="md:hidden ml-auto p-5">
+            <button onClick={handleClick}>
+              <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20" rx="8"></rect>
+                <rect y="30" width="100" height="20" rx="8"></rect>
+                <rect y="60" width="100" height="20" rx="8"></rect>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div className="flex justify-center">
+        <div
+          className={
+            open
+              ? "hidden md:flex-row flex-col justify-center"
+              : "flex md:flex-row flex-col justify-center"
+          }
+        >
           <div className="p-5">
             <Link href="/">
               <a>
-                <p className="font-bodoni uppercase link hover:text-black text-gray-500">
+                <p className="font-serif uppercase link hover:text-black text-gray-500">
                   About
                 </p>
               </a>
             </Link>
           </div>
           <div className="p-5">
-            <Link href="/">
+            <Link href="/events">
               <a>
-                <p className="font-bodoni uppercase link hover:text-black text-gray-500">
-                  Events
+                <p className="font-serif uppercase link hover:text-black text-gray-500">
+                  Weddings
                 </p>
               </a>
             </Link>
@@ -39,8 +54,8 @@ export default function Navbar() {
           <div className="p-5">
             <Link href="/Media">
               <a>
-                <p className="font-bodoni uppercase link hover:text-black text-gray-500">
-                  Media
+                <p className="font-serif uppercase link hover:text-black text-gray-500">
+                  Listen
                 </p>
               </a>
             </Link>
@@ -48,30 +63,18 @@ export default function Navbar() {
           <div className="p-5">
             <Link href="/booking">
               <a>
-                <p className="font-bodoni uppercase link hover:text-black text-gray-500">
+                <p className="font-serif uppercase link hover:text-black text-gray-500">
                   Lessons
                 </p>
               </a>
             </Link>
           </div>
-          <div className="py-5 pl-5">
-            <Link href="https://www.instagram.com">
+          <div className="p-5">
+            <Link href="/contact">
               <a>
-                <Image src={"/instagram.png"} width={"32"} height={"32"} />
-              </a>
-            </Link>
-          </div>
-          <div className="py-5 px-2">
-            <Link href="https://www.instagram.com">
-              <a>
-                <Image src={"/youtube.png"} width={"32"} height={"32"} />
-              </a>
-            </Link>
-          </div>
-          <div className="py-5 px-2">
-            <Link href="https://www.instagram.com">
-              <a>
-                <Image src={"/tik-tok.png"} width={"32"} height={"32"} />
+                <p className="font-serif uppercase link hover:text-black text-gray-500">
+                  Contact
+                </p>
               </a>
             </Link>
           </div>

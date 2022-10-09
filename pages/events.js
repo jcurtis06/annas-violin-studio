@@ -17,7 +17,7 @@ export default function Events() {
           />
         </div>
         <div className="relative flex flex-col items-center h-full justify-center">
-          <h1 className="font-sketch text-6xl text-white">Events</h1>
+          <h1 className="font-sketch text-6xl text-white">Weddings</h1>
         </div>
       </div>
       <div className="md:px-52 px-4 py-10 grid md:grid-cols-2">
@@ -26,13 +26,14 @@ export default function Events() {
             Is Your Big Day Approaching?
           </p>
           <p className="font-serif pt-5">
-            Hello, I&apos;m John Doe and I teach violin lessons in 123 and 123,
-            123. I have played violin for 11 years, participating in youth
-            orchestras and quartets, and teaching violin at Seattle Music
-            Partners, a program that provides free music lessons for low-income
-            families. I also play for my church, weddings, and other events. I
-            have completed Suzuki Teaching Certification and I primarily teach
-            using the Suzuki Method.
+            My sister Julia and I (Anna) love to play music together and have
+            performed for many events, so this year in 2022 we decided to start
+            a business playing music for weddings and other events! In order to
+            secure your date, we ask for a 30% deposit upon booking. After we
+            send you a quote and contract, we will arrange payment online or by
+            check that is due the week before the event. Typically we play for 1
+            hour, while guests are arriving, during the ceremony, and a prelude
+            after the guests leave. We will travel up to 1 hour free of charge.
           </p>
         </div>
         <div className="border-black grid md:grid-cols-2 font-serif">

@@ -33,7 +33,7 @@ export default function Media({ data }) {
           />
         </div>
         <div className="relative flex flex-col items-center h-full justify-center">
-          <h1 className="font-sketch text-6xl text-white">Media</h1>
+          <h1 className="font-sketch text-6xl text-white">Listen</h1>
         </div>
       </div>
       <div className="w-full flex overflow-x-hidden justify-center">

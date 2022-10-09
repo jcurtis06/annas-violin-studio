@@ -23,22 +23,20 @@ export default function Home() {
       <div className="md:px-52 px-4 py-10">
         <p className="text-2xl font-sketch salmon-color">Who I Am</p>
         <p className="font-serif pt-5">
-          Hello, I&apos;m John Doe and I teach violin lessons in 123 and 123,
-          123. I have played violin for 11 years, participating in youth
-          orchestras and quartets, and teaching violin at Seattle Music
+          Hello, I&apos;m Anna Curtis and I teach violin lessons in Thornville
+          and Zanesville, Ohio. I have played violin for 11 years, participating
+          in youth orchestras and quartets, and teaching violin at Seattle Music
           Partners, a program that provides free music lessons for low-income
-          families. I also play for my church, weddings, and other events. I
-          have completed Suzuki Teaching Certification and I primarily teach
-          using the Suzuki Method.
+          families. Now I help coach the Newark Granville Youth Symphony. I also
+          play for my church, weddings, and other events. I have completed
+          Suzuki Teaching Certification and I primarily teach using the Suzuki
+          Method. Both traditional and fiddle lessons are available.
         </p>
         <p className="text-2xl font-sketch pt-5 salmon-color">Lessons</p>
         <p className="font-serif pt-5">
           I teach lessons at an affordable rate, with many different time slots
           available. Lessons can range from 30 minutes to 1 hour, and are
-          available on weekdays and weekends. I teach at my home studio in 123,
-          123, 123, I also teach at Guitar Guys in Newark and The Loft in
-          Zanesville. I teach students of all ages and levels, from beginner to
-          advanced. Fiddle lessons are also available.
+          available on weekdays and weekends.
         </p>
         <p className="text-2xl font-sketch pt-5 salmon-color">Events</p>
         <p className="font-serif pt-5">

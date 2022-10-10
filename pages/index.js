@@ -32,18 +32,6 @@ export default function Home() {
           Suzuki Teaching Certification and I primarily teach using the Suzuki
           Method. Both traditional and fiddle lessons are available.
         </p>
-        <p className="text-2xl font-sketch pt-5 salmon-color">Lessons</p>
-        <p className="font-serif pt-5">
-          I teach lessons at an affordable rate, with many different time slots
-          available. Lessons can range from 30 minutes to 1 hour, and are
-          available on weekdays and weekends.
-        </p>
-        <p className="text-2xl font-sketch pt-5 salmon-color">Events</p>
-        <p className="font-serif pt-5">
-          Is your event in need of a violinist? I play for weddings, funerals,
-          and more. Pricing is based on the event and the amount of time needed.
-          Please contact me for pricing information and availability.
-        </p>
       </div>
     </div>
   );

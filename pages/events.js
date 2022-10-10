@@ -27,13 +27,13 @@ export default function Events() {
           </p>
           <p className="font-serif pt-5">
             My sister Julia and I (Anna) love to play music together and have
-            performed for many events, so this year in 2022 we decided to start
-            a business playing music for weddings and other events! In order to
-            secure your date, we ask for a 30% deposit upon booking. After we
-            send you a quote and contract, we will arrange payment online or by
-            check that is due the week before the event. Typically we play for 1
-            hour, while guests are arriving, during the ceremony, and a prelude
-            after the guests leave. We will travel up to 1 hour free of charge.
+            performed for many events, so we decided to start a business playing
+            music for weddings and other events! In order to secure your date,
+            we ask for a 30% deposit upon booking. After we send you a quote and
+            contract, we will arrange payment online or by check that is due the
+            week before the event. Typically we play for 1 hour, while guests
+            are arriving, during the ceremony, and a prelude after the guests
+            leave. We will travel up to 1 hour free of charge.
           </p>
         </div>
         <div className="border-black grid md:grid-cols-2 font-serif">

@@ -9,7 +9,7 @@ export default function Home() {
         <div className="-z-10 brightness-75">
           <Image
             priority
-            src={"/home-bg.jpg"}
+            src={'/home-bg.jpg'}
             layout="fill"
             objectFit="cover"
             objectPosition="center"

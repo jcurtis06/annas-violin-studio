@@ -30,7 +30,7 @@ export default function Home() {
           families. Now I help coach the Newark Granville Youth Symphony. I also
           play for my church, weddings, and other events. I have completed
           Suzuki Teaching Certification and I primarily teach using the Suzuki
-          Method. Both traditional and fiddle lessons are available.
+          Method.
         </p>
       </div>
     </div>

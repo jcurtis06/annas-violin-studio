@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-screen h-64 shadow-md">
-        <div className="-z-10 brightness-75">
+        <div className="-z-10 brightness-75 absolute inset-0">
           <Image
             priority
-            src={'/home-bg.jpg'}
+            src="/home-bg.jpg"
             layout="fill"
             objectFit="cover"
             objectPosition="center"
@@ -20,6 +20,7 @@ export default function Home() {
           <h1 className="font-sketch text-6xl text-white">About Me</h1>
         </div>
       </div>
+
       <div className="md:px-52 px-4 py-10">
         <p className="text-2xl font-sketch salmon-color">Who I Am</p>
         <p className="font-serif pt-5">

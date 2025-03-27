@@ -22,7 +22,7 @@ export default function Media({ data }) {
   return (
     <>
       <div className="relative w-screen h-64 shadow-md">
-        <div className="-z-10 brightness-75">
+        <div className="-z-10 brightness-75 absolute inset-0">
           <Image
             priority
             src={"/media-bg.jpg"}

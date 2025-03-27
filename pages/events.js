@@ -6,7 +6,7 @@ export default function Events() {
   return (
     <div>
       <div className="relative w-screen h-64 shadow-md">
-        <div className="-z-10 brightness-75">
+        <div className="-z-10 brightness-75 absolute inset-0">
           <Image
             priority
             src={"/events-bg.jpg"}

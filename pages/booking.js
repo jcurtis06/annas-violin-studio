@@ -5,7 +5,7 @@ export default function Booking() {
   return (
     <>
       <div className="relative w-screen h-64 shadow-md mb-20">
-        <div className="-z-10 brightness-75">
+        <div className="-z-10 brightness-75 absolute inset-0">
           <Image
             priority
             src={"/home-bg.jpg"}

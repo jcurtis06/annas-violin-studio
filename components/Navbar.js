@@ -48,7 +48,7 @@ export default function Navbar() {
             <Link href="/">
               <a onClick={handleClick}>
                 <p className="font-serif uppercase link hover:text-black text-gray-500">
-                  About
+                  Services
                 </p>
               </a>
             </Link>
